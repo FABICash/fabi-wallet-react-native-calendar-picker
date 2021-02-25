@@ -4,11 +4,7 @@ npm-debug.*
 .DS_Store
 package-lock.json
 
-node_modules/**/*
-
-example/node_modules/
-example/CalendarPicker/
-example/package-lock.json
+example/
 
 # Xcode
 build/
