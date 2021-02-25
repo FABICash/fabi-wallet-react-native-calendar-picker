@@ -4,8 +4,6 @@ npm-debug.*
 .DS_Store
 package-lock.json
 
-example/
-
 # Xcode
 build/
 *.pbxuser
