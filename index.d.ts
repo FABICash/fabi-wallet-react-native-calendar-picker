@@ -8,7 +8,7 @@ import * as React from "react";
 import { StyleProp, TextStyle, ViewStyle } from "react-native";
 import { Moment, MomentInput } from "moment";
 
-export default class CalendarPicker extends React.Component<CalendarPickerProps> {
+export class CalendarPicker extends React.Component<CalendarPickerProps> {
    handleOnPressDay(date: HandleOnPressDayArg): void;
    handleOnPressNext(): void;
    handleOnPressPrevious(): void;

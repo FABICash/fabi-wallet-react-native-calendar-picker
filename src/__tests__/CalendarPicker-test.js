@@ -4,7 +4,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import CalenderPicker from '../index';
 
-describe('CalendarPicker', function() {
+describe('CalendarPicker', function () {
   it('It renders calendar picker', () => {
     const CalendarPicker = renderer.create(
       <CalenderPicker
@@ -27,7 +27,7 @@ describe('CalendarPicker', function() {
         todayBackgroundColor="#f2e6ff"
         selectedDayColor="#7300e6"
         selectedDayTextColor="#FFFFFF"
-        onDateChange={() => {}}
+        onDateChange={() => { }}
       />
     ).toJSON();
     expect(CalendarPicker).toBeTruthy();
@@ -42,7 +42,7 @@ describe('CalendarPicker', function() {
         initialDate={new Date(2019, 1, 20)}
         selectedStartDate={selectedStartDate}
         selectedEndDate={selectedEndDate}
-        onDateChange={() => {}}
+        onDateChange={() => { }}
       />
     ).toJSON();
     expect(CalendarPicker).toBeTruthy();

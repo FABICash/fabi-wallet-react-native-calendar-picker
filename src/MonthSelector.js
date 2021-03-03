@@ -6,44 +6,44 @@ import MonthsGridView from './MonthsGridView';
 import MonthsHeader from './MonthsHeader';
 
 export default class MonthSelector extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      currentYear: props.currentYear,
-    };
-  }
+	constructor(props) {
+		super(props);
+		this.state = {
+			currentYear: props.currentYear,
+		};
+	}
 
-  render() {
-    const {
-      styles,
-      textStyle,
-      title,
-      headingLevel,
-      currentYear,
-      months,
-      minDate,
-      maxDate,
-      onSelectMonth,
-    } = this.props;
+	render() {
+		const {
+			styles,
+			textStyle,
+			title,
+			headingLevel,
+			currentYear,
+			months,
+			minDate,
+			maxDate,
+			onSelectMonth,
+		} = this.props;
 
-    return (
-      <View styles={styles.calendar}>
-        <MonthsHeader
-          styles={styles}
-          textStyle={textStyle}
-          title={title + currentYear}
-          headingLevel={headingLevel}
-        />
-        <MonthsGridView
-          styles={styles}
-          textStyle={textStyle}
-          currentYear={currentYear}
-          months={months}
-          minDate={minDate}
-          maxDate={maxDate}
-          onSelectMonth={onSelectMonth}
-        />
-      </View>
-    );
-  }
+		return (
+			<View styles={styles.calendar}>
+				<MonthsHeader
+					styles={styles}
+					textStyle={textStyle}
+					title={title + currentYear}
+					headingLevel={headingLevel}
+				/>
+				<MonthsGridView
+					styles={styles}
+					textStyle={textStyle}
+					currentYear={currentYear}
+					months={months}
+					minDate={minDate}
+					maxDate={maxDate}
+					onSelectMonth={onSelectMonth}
+				/>
+			</View>
+		);
+	}
 }
