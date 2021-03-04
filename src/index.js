@@ -525,6 +525,7 @@ export class CalendarPicker extends React.Component {
 			onMonthChange,
 			scrollable,
 			horizontal,
+			cancelText,
 			onCalendarCancel,
 		} = this.props;
 
@@ -593,6 +594,7 @@ export class CalendarPicker extends React.Component {
 							headingLevel={headingLevel}
 							monthYearHeaderWrapperStyle={monthYearHeaderWrapperStyle}
 							headerWrapperStyle={headerWrapperStyle}
+							cancelText={cancelText}
 							onCalendarCancel={onCalendarCancel}
 						/>
 						<Weekdays

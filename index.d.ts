@@ -70,6 +70,8 @@ export interface CalendarPickerProps {
    monthTitleStyle?: StyleProp<TextStyle>;
    yearTitleStyle?: StyleProp<TextStyle>;
    customDayHeaderStyles?: CustomDayHeaderStylesFunc;
+   cancelText?: string;
+   onCalendarCancel?: () => any;
 }
 
 export type ExistingDate = Date | Moment;

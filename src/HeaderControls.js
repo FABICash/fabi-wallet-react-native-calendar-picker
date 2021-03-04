@@ -35,6 +35,7 @@ export default function HeaderControls(props) {
 		headingLevel,
 		monthYearHeaderWrapperStyle,
 		headerWrapperStyle,
+		cancelText,
 		onCalendarCancel
 	} = props;
 	const MONTHS = months || Utils.MONTHS; // English Month Array
@@ -98,7 +99,7 @@ export default function HeaderControls(props) {
 					paddingHorizontal: 20,
 					marginLeft: 25
 				}}>
-				<Text style={[textStyle, { color: '#ACABB3' }]}>Cancel</Text>
+				<Text style={[textStyle, { color: '#ACABB3' }]}>{cancelText || 'Cancel'}</Text>
 			</Pressable>
 		</View>
 	);
