@@ -19,10 +19,8 @@ export class CalendarPicker extends React.Component {
 			currentYear: null,
 			currentWeekday: null,
 			currentView: "days",
-			selectedStartDate:
-				props.selectedStartDate && moment(props.selectedStartDate),
-			selectedEndDate:
-				props.selectedEndDate && moment(props.selectedEndDate),
+			selectedStartDate: props.selectedStartDate && moment(props.selectedStartDate),
+			selectedEndDate: props.selectedEndDate && moment(props.selectedEndDate),
 			minDate: props.minDate && moment(props.minDate),
 			maxDate: props.maxDate && moment(props.maxDate),
 			styles: {},

@@ -34,10 +34,10 @@ export interface CalendarPickerProps {
    selectedRangeEndStyle?: StyleProp<ViewStyle>;
    selectedRangeStyle?: StyleProp<ViewStyle>;
    selectedDisabledDatesTextStyle?: StyleProp<TextStyle>;
-   disabledDates?: Date[] | DisabledDatesFunc;
+   disabledDates?: ExistingDate[] | DisabledDatesFunc;
    disabledDatesTextStyle?: StyleProp<TextStyle>;
-   selectedStartDate?: Date;
-   selectedEndDate?: Date;
+   selectedStartDate?: DateType;
+   selectedEndDate?: DateType;
    minRangeDuration?: number | MinDurationArrayItem[];
    maxRangeDuration?: number | MaxDurationArrayItem[];
    todayBackgroundColor?: string;
@@ -45,9 +45,9 @@ export interface CalendarPickerProps {
    textStyle?: StyleProp<TextStyle>;
    customDatesStyles?: CustomDateStyle[] | CustomDatesStylesFunc;
    scaleFactor?: number;
-   minDate?: Date;
-   maxDate?: Date;
-   initialDate?: Date;
+   minDate?: DateType;
+   maxDate?: DateType;
+   initialDate?: DateType;
    width?: number;
    height?: number;
    scrollable?: boolean;
@@ -71,6 +71,9 @@ export interface CalendarPickerProps {
    yearTitleStyle?: StyleProp<TextStyle>;
    customDayHeaderStyles?: CustomDayHeaderStylesFunc;
 }
+
+export type ExistingDate = Date | Moment;
+export type DateType = ExistingDate | null;
 
 export type DayOfWeekStyle = {
    [key in "0" | "1" | "2" | "3" | "4" | "5" | "6"]?: TextStyle;
